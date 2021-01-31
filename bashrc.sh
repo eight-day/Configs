@@ -33,16 +33,14 @@ flines () {
 		echo "No arguments passed.";
 		return 1;
 	fi
-	
-	flines=$(wc -l "$arg1" | awk '{ print $0; }');echo "$flines";
-	return flines;
+	wc -l "$arg1" | awk '{ print $0; }'
 }
 
 
 function watchdir {
 	while true; do
-		lla;
-		sleep 2;
-		clear;
+		lla
+		sleep 2
+		clear
 	done
 }
