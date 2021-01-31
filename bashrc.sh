@@ -10,19 +10,19 @@ alias llam='ls -lA';
 alias llr='ls -lR';
 alias llsa='ls -lsa';
 
-alias ns="netstat"
-alias py="python"
-alias mk="make"
-alias lz="ls"
-alias cls="clear"
-alias nm="nmap"
-alias rmf="rm -rf" # hehe
+alias ns="netstat";
+alias py="python";
+alias mk="make";
+alias lz="ls";
+alias cls="clear";
+alias nm="nmap";
+alias rmf="rm -rf"; # hehe
 
 if [[ -f '/data/data/com.termux/files/usr/bin/bat' ]]; then
 	alias ccat="bat";
 	echo "[*] All aliases set";
 else
-	echo "[*] Bat not found, install with: pkg install bat"
+	echo "[*] Bat not found, install with: pkg install bat";
 fi
 
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31';
@@ -33,14 +33,14 @@ flines () {
 		echo "No arguments passed.";
 		return 1;
 	fi
-	wc -l "$arg1" | awk '{ print $0; }'
+	wc -l "$arg1" | awk '{ print $0; }';
 }
 
 
 function watchdir {
 	while true; do
-		lla
-		sleep 2
-		clear
+		lla;
+		sleep 2;
+		clear;
 	done
 }
