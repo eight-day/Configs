@@ -1,4 +1,4 @@
-PS1="[\033[1;00m\t\033[00m] \033[31m\w\033[1;00m\$";
+PS1="[\033[1;00m\t\033[00m] \033[31m\w\033[1;00m\$ ";
 
 # Echo some hefty aliases
 alias ll='ls -l';
