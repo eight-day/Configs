@@ -18,7 +18,7 @@ alias cls="clear"
 alias nm="nmap"
 alias rmf="rm -rf" # hehe
 
-if [ -f '/data/data/com.termux/files/usr/bin/bat']; then
+if [[ -f '/data/data/com.termux/files/usr/bin/bat' ]]; then
 	alias ccat="bat";
 	echo "[*] All aliases set";
 else
