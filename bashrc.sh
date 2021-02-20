@@ -28,13 +28,13 @@ fi
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31';
 alias grep='grep $GREP_OPTIONS';
 
-flines () {
+function flines () {
 	if [ -z "$1" ]; then
 		echo "No arguments passed.";
 		return 1;
 	fi
-	wc -l "$1" | \
-		awk '{ print "Lines: %s", $0; }';
+	wc -l "$1" |\
+	awk '{ print "Lines: %s", $0; }';
 }
 
 
