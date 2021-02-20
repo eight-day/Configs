@@ -33,7 +33,8 @@ flines () {
 		echo "No arguments passed.";
 		return 1;
 	fi
-	wc -l "$1" | awk '{ print "Lines: %s", $0; }';
+	wc -l "$1" | \
+		awk '{ print "Lines: %s", $0; }';
 }
 
 
