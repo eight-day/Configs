@@ -29,11 +29,11 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31';
 alias grep='grep $GREP_OPTIONS';
 
 flines () {
-	if [ -z "$arg1" ]; then
+	if [ -z "$1" ]; then
 		echo "No arguments passed.";
 		return 1;
 	fi
-	wc -l "$arg1" | awk '{ print $0; }';
+	wc -l "$1" | awk '{ print $0; }';
 }
 
 
